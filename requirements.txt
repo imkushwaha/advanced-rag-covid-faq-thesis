@@ -1,0 +1,14 @@
+pandas
+numpy
+sentence-transformers
+langchain_openai
+langchain-community faiss-cpu
+langchain_groq
+matplotlib
+seaborn
+scikit-learn
+nltk
+rouge-score
+evaluate
+rouge_score
+ragas
