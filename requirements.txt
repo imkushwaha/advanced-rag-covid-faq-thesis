@@ -1,8 +1,10 @@
 pandas
 numpy
 sentence-transformers
+langchain
 langchain_openai
 langchain-community faiss-cpu
+langchain-text-splitters
 langchain_groq
 matplotlib
 seaborn
@@ -12,3 +14,5 @@ rouge-score
 evaluate
 rouge_score
 ragas
+openai
+tiktoken
