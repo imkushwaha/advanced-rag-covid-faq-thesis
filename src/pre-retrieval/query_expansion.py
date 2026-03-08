@@ -17,11 +17,14 @@ The implementation is modular and integrated into the broader retrieval workflow
 - Prompt Engineering: The system utilises a prompt template which provides a zero-shot prompt. This template instructs the LLM to generate alternative questions separated by a specific token, such as #next-question#, which the system uses to parse the generated string back into a list of query objects.
 """
 
-from openai import OpenAI
+import os
 from typing import List
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
+from typing import List
 
+api_key = "<ENTER-YOUR-OPENAI-KEY-HERE>"
+os.environ["OPENAI_API_KEY"] = api_key
 
 
 class QueryExpander:
@@ -97,7 +100,8 @@ User query:
 
 
 
-# Usage
+# Usage Example
+
 query_expander = QueryExpansion()
 expanded_queries = query_expander.run("What is the meaning of life?")
 
